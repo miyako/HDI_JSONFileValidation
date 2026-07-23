@@ -58,7 +58,7 @@
 					"width": 64,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "ID : "
+					"text": ":xliff:Common_FieldID"
 				},
 				"S2_Text": {
 					"type": "text",
@@ -67,7 +67,7 @@
 					"width": 280,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "JSON_text : "
+					"text": ":xliff:Common_FieldJSONText"
 				},
 				"Rectangle4": {
 					"type": "rectangle",
@@ -76,6 +76,7 @@
 					"width": 416,
 					"height": 25,
 					"sizingX": "grow",
+					"fill": "automatic",
 					"stroke": "transparent"
 				},
 				"S1_Field": {
@@ -114,7 +115,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[JSON_example:1]JSON_text:2",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -136,7 +137,7 @@
 					"top": -5,
 					"left": 0,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"stroke": "automatic"
 				},
 				"Line6": {
 					"type": "line",
@@ -144,14 +145,14 @@
 					"left": 416,
 					"height": 49,
 					"sizingX": "move",
-					"stroke": "#A8A8A8"
+					"stroke": "automatic"
 				},
 				"Line7": {
 					"type": "line",
 					"top": -5,
 					"left": 104,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"stroke": "automatic"
 				},
 				"Splitter2": {
 					"type": "splitter",

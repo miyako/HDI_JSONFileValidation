@@ -120,7 +120,7 @@
 					"top": 201,
 					"left": 40,
 					"width": 228,
-					"height": 26,
+					"height": 27,
 					"dataSource": "arrTitle",
 					"focusable": false,
 					"method": "ObjectMethods/Popup Dropdown List1.4dm",
@@ -168,7 +168,7 @@
 					"width": 137,
 					"height": 17,
 					"textDecoration": "underline",
-					"text": "vJSON:"
+					"text": ":xliff:HDI2_LblVJSON"
 				},
 				"Text2": {
 					"type": "text",
@@ -177,7 +177,7 @@
 					"width": 137,
 					"height": 17,
 					"textDecoration": "underline",
-					"text": "oResult:"
+					"text": ":xliff:HDI2_LblOResult"
 				}
 			}
 		},
@@ -208,7 +208,7 @@
 					"top": 201,
 					"left": 40,
 					"width": 228,
-					"height": 26,
+					"height": 27,
 					"dataSource": "arrTitle",
 					"focusable": false,
 					"method": "ObjectMethods/Popup Dropdown List.4dm",
@@ -253,7 +253,7 @@
 					"width": 137,
 					"height": 17,
 					"textDecoration": "underline",
-					"text": "vJSON:"
+					"text": ":xliff:HDI2_LblVJSON"
 				},
 				"Text4": {
 					"type": "text",
@@ -262,10 +262,15 @@
 					"width": 137,
 					"height": 17,
 					"textDecoration": "underline",
-					"text": "vResult:"
+					"text": ":xliff:HDI2_LblVResult"
 				}
 			}
 		},
 		null
-	]
+	],
+	"geometryStamp": 11,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }

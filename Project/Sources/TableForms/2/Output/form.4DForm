@@ -58,7 +58,7 @@
 					"width": 64,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "ID : "
+					"text": ":xliff:Common_FieldID"
 				},
 				"S2_Text": {
 					"type": "text",
@@ -67,7 +67,7 @@
 					"width": 240,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "Title : "
+					"text": ":xliff:Common_FieldTitle"
 				},
 				"S3_Text": {
 					"type": "text",
@@ -76,7 +76,7 @@
 					"width": 240,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "Text : "
+					"text": ":xliff:Common_FieldText"
 				},
 				"S4_Text": {
 					"type": "text",
@@ -85,7 +85,7 @@
 					"width": 76,
 					"height": 17,
 					"sizingX": "grow",
-					"text": "SampleSort : "
+					"text": ":xliff:Common_FieldSampleSort"
 				},
 				"Rectangle6": {
 					"type": "rectangle",
@@ -94,6 +94,7 @@
 					"width": 756,
 					"height": 25,
 					"sizingX": "grow",
+					"fill": "automatic",
 					"stroke": "transparent"
 				},
 				"S1_Field": {
@@ -132,7 +133,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[SAMPLES:2]Title:2",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -157,7 +158,7 @@
 					"height": 17,
 					"sizingX": "grow",
 					"dataSource": "[SAMPLES:2]Text:3",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -183,7 +184,7 @@
 					"sizingX": "grow",
 					"dataSource": "[SAMPLES:2]SampleSort:4",
 					"dataSourceTypeHint": "integer",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "none",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -205,7 +206,7 @@
 					"top": -5,
 					"left": 0,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"stroke": "automatic"
 				},
 				"Line8": {
 					"type": "line",
@@ -213,14 +214,14 @@
 					"left": 756,
 					"height": 49,
 					"sizingX": "move",
-					"stroke": "#A8A8A8"
+					"stroke": "automatic"
 				},
 				"Line9": {
 					"type": "line",
 					"top": -5,
 					"left": 648,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"stroke": "automatic"
 				},
 				"Splitter2": {
 					"type": "splitter",
@@ -239,7 +240,7 @@
 					"top": -5,
 					"left": 376,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"stroke": "automatic"
 				},
 				"Splitter3": {
 					"type": "splitter",
@@ -258,7 +259,7 @@
 					"top": -5,
 					"left": 104,
 					"height": 49,
-					"stroke": "#A8A8A8"
+					"stroke": "automatic"
 				},
 				"Splitter4": {
 					"type": "splitter",
