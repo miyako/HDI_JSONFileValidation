@@ -8,11 +8,16 @@ vJSON:=arrJSON{arrTitle}
 // validate the varJSON against to varSchema
 oResult:=JSON Validate:C1456(JSON Parse:C1218(vJSON; *); JSON Parse:C1218(vSchema))
 
+// read theme-appropriate colors from hidden reference rectangles
+var $fg; $bg : Integer
+
 // check the validity
 If (OB Get:C1224(oResult; "success")=False:C215)
-	//if unsuccessful, set the background object to red
-	OBJECT SET RGB COLORS:C628(oResult; 0x0000; 0x00FFCCCC)
+	//if unsuccessful, use error fill
+	OBJECT GET RGB COLORS(*; "refErrorFill"; $fg; $bg)
+	OBJECT SET RGB COLORS:C628(oResult; 0x0000; $bg)
 Else 
-	//if successful, set the background object to green
-	OBJECT SET RGB COLORS:C628(oResult; 0x0000; 0x00DDFFCC)
+	//if successful, use success fill
+	OBJECT GET RGB COLORS(*; "refSuccessFill"; $fg; $bg)
+	OBJECT SET RGB COLORS:C628(oResult; 0x0000; $bg)
 End if 

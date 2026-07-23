@@ -6,10 +6,22 @@
 	.warning-text {
 		stroke: #FF4D00;
 	}
+	.ref-success-fill {
+		fill: #DDFFCC;
+	}
+	.ref-error-fill {
+		fill: #FFCCCC;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
 	.warning-text {
 		stroke: #FF7A47;
+	}
+	.ref-success-fill {
+		fill: #1E4D1E;
+	}
+	.ref-error-fill {
+		fill: #5C2020;
 	}
 }

@@ -70,6 +70,26 @@
 					"events": [
 						"onDataChange"
 					]
+				},
+				"refSuccessFill": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-success-fill",
+					"stroke": "transparent",
+					"visibility": "hidden"
+				},
+				"refErrorFill": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "ref-error-fill",
+					"stroke": "transparent",
+					"visibility": "hidden"
 				}
 			}
 		},
@@ -268,9 +288,16 @@
 		},
 		null
 	],
-	"geometryStamp": 11,
+	"geometryStamp": 57,
 	"$4d": {
 		"version": "1",
 		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
 	}
 }
