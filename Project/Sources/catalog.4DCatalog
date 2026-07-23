@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
-<base name="HDI_JSONFileValidation-2" uuid="F3ECEEB897234707860DCE647DDA3F68" collation_locale="en">
+<base name="HDI_JSONFileValidation" uuid="F3ECEEB897234707860DCE647DDA3F68" collation_locale="en">
 	<schema name="DEFAULT_SCHEMA"/>
-	<table name="JSON_example" uuid="BB3E577BE3EC4084ADA925DE6925818D" id="1">
-		<field name="ID" uuid="DCD4B5BDD51049E0BCDC4D7F7E29D567" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="JSON_text" uuid="B1744A422C904E92BF7223A57A262BAE" type="10" never_null="true" id="2"/>
-		<field name="Title" uuid="61150274FA8F47BB86D09EABC8A59871" type="10" limiting_length="255" never_null="true" id="3"/>
-		<primary_key field_name="ID" field_uuid="DCD4B5BDD51049E0BCDC4D7F7E29D567"/>
-		<table_extra input_form="Input" output_form="Output"/>
-	</table>
-	<table name="SAMPLES" uuid="6E2D7650DFBE4302AF93EBB388179EA8" id="2">
-		<field name="ID" uuid="DA3A434D43F04688AE1F200A9D332831" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="Title" uuid="007BE0CD6FF949A1BD76596DB2380C12" type="10" never_null="true" id="2"/>
-		<field name="Text" uuid="502948BCA3E84D9681DB2E9EED07AE35" type="10" never_null="true" id="3"/>
-		<field name="SampleSort" uuid="F75A09B6635846A4B7C57F60900CAB16" type="4" never_null="true" id="4"/>
-		<primary_key field_name="ID" field_uuid="DA3A434D43F04688AE1F200A9D332831"/>
-		<table_extra input_form="Input" output_form="Output"/>
-	</table>
-	<index kind="regular" unique_keys="true" uuid="0EA43E84CE6C44DEA9A738DD603F4002" type="1">
-		<field_ref uuid="DA3A434D43F04688AE1F200A9D332831" name="ID">
-			<table_ref uuid="6E2D7650DFBE4302AF93EBB388179EA8" name="SAMPLES"/>
-		</field_ref>
-	</index>
-	<index kind="regular" unique_keys="true" uuid="2C6C24F0189A4F93B31521A6B719ADE9" type="7">
-		<field_ref uuid="DCD4B5BDD51049E0BCDC4D7F7E29D567" name="ID">
-			<table_ref uuid="BB3E577BE3EC4084ADA925DE6925818D" name="JSON_example"/>
-		</field_ref>
-	</index>
 	<base_extra package_name="HDI_JSONFileValidation" structure_file_name="HowDoI" data_file_path=":HowDoI.4DD">
 		<journal_file journal_file_enabled="false"/>
 	</base_extra>
