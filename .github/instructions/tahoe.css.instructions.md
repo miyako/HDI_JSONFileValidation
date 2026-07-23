@@ -6,7 +6,7 @@ description: "Rules for adapting 4D form buttons and controls to macOS Tahoe Liq
 
 ## Overview
 
-Starting with macOS Tahoe (macOS 26) and 4D 21 R3, Apple's Liquid Glass visual language is applied automatically to 4D desktop applications. While no code changes are strictly required, some controls — particularly push buttons — need height adjustments to render correctly with the new appearance. This document describes how to use CSS media queries with `form-theme` to adapt form object sizing and styling per platform theme.
+Starting with macOS Tahoe (macOS 26) and 4D 21 R3, Apple's Liquid Glass visual language is applied automatically to 4D desktop applications. While no code changes are strictly required, some controls — particularly push buttons and dropdown/popup menus — need height adjustments to render correctly with the new appearance. This document describes how to use CSS media queries with `form-theme` to adapt form object sizing and styling per platform theme.
 
 ---
 
@@ -123,13 +123,14 @@ Use CSS media queries in `styleSheets_mac.css` to set appropriate button heights
 
 ### Mandatory Audit Scope: Every Button in Every Form
 
-Button height is a project-wide concern, not a single-form concern. Before
-declaring this migration done, you **must** enumerate every button in
-**every** `form.4DForm` file in the project — not just the form you happen
-to be looking at, and not just the first button you notice.
+Button and dropdown height is a project-wide concern, not a single-form
+concern. Before declaring this migration done, you **must** enumerate every
+button **and** every dropdown in **every** `form.4DForm` file in the
+project — not just the form you happen to be looking at, and not just the
+first control you notice.
 
 ```
-grep -rn '"type": "button"' Project/Sources/Forms/ Project/Sources/TableForms/
+grep -rn '"type": "button"\|"type": "dropdown"' Project/Sources/Forms/ Project/Sources/TableForms/
 ```
 
 For each match, check the enclosing object for a `height` (or `bottom`)
@@ -209,6 +210,18 @@ You may combine type and class selectors in CSS: `button.default` targets only b
 ### Radio Buttons and Checkboxes
 
 Under Liquid Glass, radio buttons and checkboxes render slightly larger. Review spacing and alignment around these controls to ensure they do not overlap adjacent objects.
+
+### Dropdown / Popup Menus
+
+Dropdown and popup menu controls (`"type": "dropdown"`) follow the **same 27px height threshold** as push buttons. A dropdown must be at least **27px high** to receive the rounded Liquid Glass appearance; at 26px or below it renders as a flat, square control.
+
+Unlike buttons, dropdowns are typically **not** managed via CSS classes — their height is left in the form JSON. Ensure every dropdown in the project has `"height": 27` (or greater). The audit scope is the same as for buttons: grep **every** form for `"type": "dropdown"` and verify each one meets the threshold.
+
+```
+grep -rn '"type": "dropdown"' Project/Sources/Forms/ Project/Sources/TableForms/
+```
+
+**This was missed in practice**: one dropdown (`Popup Dropdown List`) was 26px while its sibling (`Popup Dropdown List1`) was already 27px on the same form. The one-pixel difference caused one to render with Liquid Glass styling and the other without — visually inconsistent.
 
 ### Combo Boxes
 
@@ -368,9 +381,9 @@ This retains the classic visual style while you adapt interfaces. This key has *
 
 ## Checklist
 
-When adapting a 4D project for Liquid Glass button support:
+When adapting a 4D project for Liquid Glass support:
 
-- [ ] Ran `grep -rn '"type": "button"' Project/Sources/Forms/ Project/Sources/TableForms/` and accounted for **every** result across **every** form — not just the form initially in scope
+- [ ] Ran `grep -rn '"type": "button"\|"type": "dropdown"' Project/Sources/Forms/ Project/Sources/TableForms/` and accounted for **every** result across **every** form — not just the form initially in scope
 - [ ] `styleSheets_mac.css` exists in `Project/Sources/`
 - [ ] `@media (form-theme: liquid-glass)` rule sets `height: 27px` for target button class
 - [ ] `@media (form-theme: mac-classic)` rule sets `height: 23px` for target button class
@@ -379,6 +392,7 @@ When adapting a 4D project for Liquid Glass button support:
 - [ ] `bottom` property removed from target buttons in `form.4DForm` (if present)
 - [ ] Only `top`, `left`, `width` (or `right`) remain as positioning properties
 - [ ] All buttons in a visual group use the same class for consistent rendering
+- [ ] All dropdowns (`"type": "dropdown"`) have `"height": 27` or greater in the form JSON
 - [ ] No `!important` used to override JSON-defined heights (remove from JSON instead)
 - [ ] Radio buttons and checkboxes reviewed for spacing under Liquid Glass
 - [ ] Combo boxes reviewed for background transparency under Liquid Glass
