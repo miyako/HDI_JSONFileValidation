@@ -168,7 +168,7 @@
 					"width": 137,
 					"height": 17,
 					"textDecoration": "underline",
-					"text": "vJSON:"
+					"text": ":xliff:HDI2_LblVJSON"
 				},
 				"Text2": {
 					"type": "text",
@@ -177,7 +177,7 @@
 					"width": 137,
 					"height": 17,
 					"textDecoration": "underline",
-					"text": "oResult:"
+					"text": ":xliff:HDI2_LblOResult"
 				}
 			}
 		},
@@ -253,7 +253,7 @@
 					"width": 137,
 					"height": 17,
 					"textDecoration": "underline",
-					"text": "vJSON:"
+					"text": ":xliff:HDI2_LblVJSON"
 				},
 				"Text4": {
 					"type": "text",
@@ -262,7 +262,7 @@
 					"width": 137,
 					"height": 17,
 					"textDecoration": "underline",
-					"text": "vResult:"
+					"text": ":xliff:HDI2_LblVResult"
 				}
 			}
 		},

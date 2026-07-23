@@ -1,10 +1,10 @@
-
+//%attributes = {"invisible":true}
 Case of 
 	: (Form event code:C388=On Load:K2:1)
 		initHDI
 		
-		C_TEXT:C284(vResult; vJSON; vSchema)
-		C_OBJECT:C1216(oResult)
+		var vResult; vJSON; vSchema : Text
+		var oResult : Object
 		
 		//load the JSON schema
 		vSchema:=Document to text:C1236(Get 4D folder:C485(Current resources folder:K5:16)+"PersonSchema.json")

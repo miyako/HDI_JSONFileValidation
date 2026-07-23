@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Project/Sources/Forms/HDI/form.4DForm" source-language="en" target-language="ja">
+	<body>
+	  <trans-unit id="HDI_TxtInfo1" resname="HDI_TxtInfo1">
+		<source>How Do I...</source>
+		<target>使い方...</target>
+	  </trans-unit>
+	  <trans-unit id="HDI_TxtInfo2" resname="HDI_TxtInfo2">
+		<source>… validate a JSON document with the new JSON Validate command?</source>
+		<target>…新しい JSON Validate コマンドで JSON ドキュメントを検証するには?</target>
+	  </trans-unit>
+	  <trans-unit id="HDI_TxtVersion" resname="HDI_TxtVersion">
+		<source>(4D v16 R4 and above…)</source>
+		<target>(4D v16 R4 以降…)</target>
+	  </trans-unit>
+	  <trans-unit id="HDI_TxtSorry1" resname="HDI_TxtSorry1">
+		<source>Do not attempt to open this HDI in Design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</source>
+		<target>このバージョンでこの HDI をデザインモードで開かないでください。開いた場合、機能不足によりフォームやメソッドが変更される可能性があります。</target>
+	  </trans-unit>
+	  <trans-unit id="HDI_TxtSorry2" resname="HDI_TxtSorry2">
+		<source>Sorry, this “How do I” (HDI) \rexample must be used with\ra newer version of 4D\r(v16 R4 and above).</source>
+		<target>申し訳ありませんが、この「How do I」(HDI) \rサンプルは\rより新しいバージョンの 4D \r(v16 R4 以降) で使用する必要があります。</target>
+	  </trans-unit>
+	  <trans-unit id="HDI_TxtSorry3" resname="HDI_TxtSorry3">
+		<source>The plugin xxx is mandatory</source>
+		<target>プラグイン xxx が必須です</target>
+	  </trans-unit>
+	  <trans-unit id="HDI_BtnDemo" resname="HDI_BtnDemo">
+		<source>Demo</source>
+		<target>デモ</target>
+	  </trans-unit>
+	  <trans-unit id="BtnClose" resname="BtnClose">
+		<source>Close</source>
+		<target>閉じる</target>
+	  </trans-unit>
+	</body>
+  </file>
+</xliff>

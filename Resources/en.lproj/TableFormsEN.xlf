@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Project/Sources/TableForms" source-language="en" target-language="en">
+	<body>
+	  <trans-unit id="Common_FieldID" resname="Common_FieldID">
+		<source>ID : </source>
+		<target>ID : </target>
+	  </trans-unit>
+	  <trans-unit id="Common_FieldJSONText" resname="Common_FieldJSONText">
+		<source>JSON_text : </source>
+		<target>JSON_text : </target>
+	  </trans-unit>
+	  <trans-unit id="Common_FieldTitle" resname="Common_FieldTitle">
+		<source>Title : </source>
+		<target>Title : </target>
+	  </trans-unit>
+	  <trans-unit id="Common_FieldText" resname="Common_FieldText">
+		<source>Text : </source>
+		<target>Text : </target>
+	  </trans-unit>
+	  <trans-unit id="Common_FieldSampleSort" resname="Common_FieldSampleSort">
+		<source>SampleSort : </source>
+		<target>SampleSort : </target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_JSONExampleHeader" resname="TableForms_JSONExampleHeader">
+		<source>JSON_example</source>
+		<target>JSON_example</target>
+	  </trans-unit>
+	  <trans-unit id="TableForms_SamplesHeader" resname="TableForms_SamplesHeader">
+		<source>SAMPLES</source>
+		<target>SAMPLES</target>
+	  </trans-unit>
+	</body>
+  </file>
+</xliff>

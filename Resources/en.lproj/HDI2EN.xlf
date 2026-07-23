@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Project/Sources/Forms/HDI2/form.4DForm" source-language="en" target-language="en">
+	<body>
+	  <trans-unit id="HDI2_LblVJSON" resname="HDI2_LblVJSON">
+		<source>vJSON:</source>
+		<target>vJSON:</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_LblOResult" resname="HDI2_LblOResult">
+		<source>oResult:</source>
+		<target>oResult:</target>
+	  </trans-unit>
+	  <trans-unit id="HDI2_LblVResult" resname="HDI2_LblVResult">
+		<source>vResult:</source>
+		<target>vResult:</target>
+	  </trans-unit>
+	</body>
+  </file>
+</xliff>

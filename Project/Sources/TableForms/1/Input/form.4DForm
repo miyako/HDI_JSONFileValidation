@@ -47,7 +47,7 @@
 					"width": 100,
 					"height": 12,
 					"dataSource": "vRecNum",
-					"stroke": "#000000",
+					"stroke": "automatic",
 					"fontFamily": "System Font",
 					"fontSize": 9,
 					"focusable": false,
@@ -74,8 +74,8 @@
 					"width": 515,
 					"height": 17,
 					"sizingX": "grow",
-					"stroke": "#000000",
-					"text": "JSON_example"
+					"stroke": "automatic",
+					"text": ":xliff:TableForms_JSONExampleHeader"
 				},
 				"Line6": {
 					"type": "line",
@@ -224,7 +224,7 @@
 					"width": 79,
 					"height": 17,
 					"textAlign": "right",
-					"text": "ID : "
+					"text": ":xliff:Common_FieldID"
 				},
 				"Text8": {
 					"type": "text",
@@ -233,7 +233,7 @@
 					"width": 79,
 					"height": 17,
 					"textAlign": "right",
-					"text": "JSON_text : "
+					"text": ":xliff:Common_FieldJSONText"
 				},
 				"ID": {
 					"type": "input",
@@ -272,7 +272,7 @@
 					"sizingY": "grow",
 					"dataSource": "[JSON_example:1]JSON_text:2",
 					"textAlign": "left",
-					"fill": "#FFFFFF",
+					"fill": "automatic",
 					"borderStyle": "sunken",
 					"contextMenu": "none",
 					"dragging": "none",
@@ -296,7 +296,7 @@
 					"width": 79,
 					"height": 17,
 					"textAlign": "right",
-					"text": "Title : "
+					"text": ":xliff:Common_FieldTitle"
 				},
 				"Field": {
 					"type": "input",
