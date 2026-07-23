@@ -1,0 +1,17 @@
+.default {
+	font-family: Lucida Grande;
+	font-size: 13px;
+}
+
+@media (form-theme: liquid-glass) {
+	button.default {
+		height: 27px;
+	}
+}
+
+@media (form-theme: mac-classic) {
+	button.default {
+		height: 23px;
+	}
+}
+

@@ -1,0 +1,15 @@
+/* Cross-platform stylesheet: dark mode colour rules.
+   Platform-specific theme rules (Liquid Glass / Fluent UI button sizing) live in
+   styleSheets_mac.css and styleSheets_windows.css. */
+
+@media (prefers-color-scheme: light) {
+	.warning-text {
+		stroke: #FF4D00;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.warning-text {
+		stroke: #FF7A47;
+	}
+}
