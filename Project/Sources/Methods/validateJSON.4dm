@@ -14,10 +14,10 @@ var $fg; $bg : Integer
 // check the validity
 If (OB Get:C1224(oResult; "success")=False:C215)
 	//if unsuccessful, use error fill
-	OBJECT GET RGB COLORS(*; "refErrorFill"; $fg; $bg)
-	OBJECT SET RGB COLORS:C628(oResult; 0x0000; $bg)
+	OBJECT GET RGB COLORS:C1074(*; "refErrorFill"; $fg; $bg)
+	OBJECT SET RGB COLORS:C628(oResult; ""; $bg)
 Else 
 	//if successful, use success fill
-	OBJECT GET RGB COLORS(*; "refSuccessFill"; $fg; $bg)
-	OBJECT SET RGB COLORS:C628(oResult; 0x0000; $bg)
+	OBJECT GET RGB COLORS:C1074(*; "refSuccessFill"; $fg; $bg)
+	OBJECT SET RGB COLORS:C628(oResult; ""; $bg)
 End if 
