@@ -24,8 +24,8 @@ Actual per-session token usage, pulled from Copilot session records.
 
 | Session | Branch | Model(s) | Input Tokens | Output Tokens | Turns |
 |---------|--------|----------|-------------:|--------------:|------:|
-| HDI project modernisation | `miyako-hdi-project-modernisation` | Claude Sonnet 5 | 9,872,054 | 48,509 | 68 |
-| **Total** | | | **9,872,054** | **48,509** | **68** |
+| HDI project modernisation | `miyako-hdi-project-modernisation` | Claude Sonnet 5 | 11,330,808 | 52,414 | 76 |
+| **Total** | | | **11,330,808** | **52,414** | **76** |
 
 This was a single-session effort covering all seven modernisation tasks (method visibility, localisation, variable declarations, menu actions, startup dialog, and dark mode/Liquid Glass styling) in one pass. The task combined mechanical refactors (attribute flags, `C_*` -> `var` conversions, CSS class extraction) with some domain-specific reasoning (4D's startup/dialog lifecycle, XLIFF structure, and token-safety verification against the existing source), which together justify a capable general-purpose model rather than a smaller one.
 
