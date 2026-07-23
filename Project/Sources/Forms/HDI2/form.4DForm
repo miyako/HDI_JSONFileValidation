@@ -120,7 +120,7 @@
 					"top": 201,
 					"left": 40,
 					"width": 228,
-					"height": 26,
+					"height": 27,
 					"dataSource": "arrTitle",
 					"focusable": false,
 					"method": "ObjectMethods/Popup Dropdown List1.4dm",
@@ -208,7 +208,7 @@
 					"top": 201,
 					"left": 40,
 					"width": 228,
-					"height": 26,
+					"height": 27,
 					"dataSource": "arrTitle",
 					"focusable": false,
 					"method": "ObjectMethods/Popup Dropdown List.4dm",
@@ -267,5 +267,10 @@
 			}
 		},
 		null
-	]
+	],
+	"geometryStamp": 11,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
 }
