@@ -32,3 +32,10 @@ This was a single-session effort covering all seven modernisation tasks (method 
 **Recommendation:** For a repeat of this kind of multi-file, instruction-driven modernisation pass, Claude Sonnet 5 in interactive or plan mode is a good fit -- the tasks are well-scoped by the instruction files but still benefit from cross-file judgment (e.g. deciding whether an object needs a form context, or whether a colour is semantic/branded vs. structural). Autopilot would likely work equally well now that the instruction files fully document the target patterns.
 
 ## Screenshots
+
+<img width="360" height="352" alt="Screenshot 2026-07-24 at 7 34 32" src="https://github.com/user-attachments/assets/c4844e14-3083-40d0-882c-0a468b87ca4c" />
+<img width="965" height="722" alt="Screenshot 2026-07-24 at 7 41 32" src="https://github.com/user-attachments/assets/9e3c76fe-af46-428a-baca-06c40c97b956" />
+<img width="965" height="722" alt="Screenshot 2026-07-24 at 7 41 27" src="https://github.com/user-attachments/assets/f3e37f69-d7e7-4625-92ae-5213a06cf751" />
+<img width="965" height="722" alt="Screenshot 2026-07-24 at 7 41 18" src="https://github.com/user-attachments/assets/2ab83644-f870-432c-add1-a17b61dc1614" />
+<img width="965" height="722" alt="Screenshot 2026-07-24 at 7 41 23" src="https://github.com/user-attachments/assets/10e98e1a-3d8d-43d8-b0ee-fb0d91bb70ba" />
+
